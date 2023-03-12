@@ -1,11 +1,11 @@
-*{
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  /* font-family: 'Poppins', sans-serif; */
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-/* body{
-    background-color: gray;
-} */
 .left-right{
     width: 50%;
 }
@@ -15,16 +15,18 @@
     font-size: 1.2em;
     color: #404145;
     font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
-    padding: 22px 150px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 18px 150px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 #navbar{
     display: flex;
@@ -38,10 +40,9 @@
 }
 #navbar li a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #404145;
     font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #logo:hover{
     color: #FF7B00;
@@ -67,36 +68,31 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 90vh;
-    padding: 80px 150px;
+    /* height: 90vh; */
+    padding: 70px 150px;
 }
 #hero-content{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 #hero-content h2{
     margin-bottom: 10px;
 }
 #hero-content .greeting{
     font-size: 3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
     color: #002057;
 }
 #hero-content #name{
     font-size: 3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
     color: #002057;
 }
 #hero-content #name span{
     color: #FF7B00;
 }
 #hero-content .myknowledge{
-    font-size: 2em;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 800;
+    font-size: 1.7em;
     color: #000;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 #hero-content .myknowledge span{
     color: #2506AD;
@@ -104,16 +100,20 @@
 #hero-content #hero-btn{
     padding: 12px 30px;
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 600;
     background: #2506AD;
     border: none;
     border-radius: 50px;
     color: #fff;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.75px;
     box-shadow:0 0 20px rgba(24, 64, 222, 0.5);
+}
+#hero-content #hero-btn span{
+    font-size: 15px;
 }
 .hero-social-icon{
     padding: 20px 0;
+    margin-top: 20px;
 }
 #social-icon{
     display: flex;
@@ -142,7 +142,7 @@
     color: #fff;}
 #hero-img{
     /* text-align: center; */
-    padding-left: 60px;
+    padding-left: 100px;
 }
 #hero-img img{
     width: 350px;
@@ -151,3 +151,92 @@
 
 }
 /* hero section end */
+/* About me section Start */
+.aboutme-sec{
+    margin-top: 80px;
+    width: 100%;
+    padding: 20px 170px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.aboutme-sec::after{
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid gray;
+    width: 80rem;
+    margin: 0 -2rem;
+    transform: translateY(7rem);
+    position: absolute;
+}
+.aboutme-title{
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+}
+.aboutme-title .fa-solid{
+    font-size: 37px;
+}
+.aboutme-title span{
+    color: rgb(177, 0, 177);
+}
+.aboutme{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutme-content .me{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.aboutme-content .pro{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.aboutme-content .des{
+    font-size: 14px;
+    word-spacing: 1px;
+    font-weight: 500;
+    color: #3c3c3c;
+    padding: 20px 0;
+}
+.personal-info{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    width: 90%;
+}
+.personal-info span{
+    font-size: 14px;
+    color: #2b02e3;
+    font-weight: 500;
+}
+.resume-btn{
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+    background: #2506AD;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    box-shadow:0 0 20px rgba(24, 64, 222, 0.5);
+}
+.resume-btn:hover{
+    background: #1f068d;
+}
+.resume-btn:hover span{
+    color: #FF7B00;
+    transform: translateX(10px);
+}
+
+.aboutme-img img{
+    width: 250px;
+}
+/* About me section end */
