@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 .left-right{
     width: 50%;
 }
@@ -159,7 +160,7 @@
     margin-bottom: 100px;
     position: relative;
 }
-.aboutme-sec::after{
+/* .aboutme-sec::after{
     display: inline-block;
     content: "";
     border-top: 0.1rem solid gray;
@@ -167,7 +168,7 @@
     margin: 0 -2rem;
     transform: translateY(7rem);
     position: absolute;
-}
+} */
 /* every section title */
 .title{
     text-align: center;
@@ -179,7 +180,7 @@
     font-size: 37px;
 }
 .title span{
-    color: rgb(177, 0, 177);
+    color: #7303a7;
 }
 .aboutme{
     display: flex;
@@ -273,3 +274,190 @@
     font-weight: 600;
 }
 /* Skills & abilities end */
+/* my education start */
+.education-section{
+    background: #e5ecfb;
+    padding: 20px 150px;
+}
+.education-section .quote{
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    word-spacing: 1.2px;
+}
+.institute-achivement{
+    padding: 10px 100px;
+}
+.edu-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;   
+}
+.edu-details .institute-img {
+    width: 300px;
+    height: 175px;
+}
+.edu-details .institute-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.edu-details .achivement-details{
+    background: #fff;
+    padding: 30.4px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 700px;
+}
+.achivement-details .degree{
+    font-size: 23px;
+    letter-spacing: 0.8px;
+    color: #012970;
+}
+.achivement-details .inst-name{
+    margin-top: 3px;
+    font-size: 15px;
+    color: #000;
+}
+.achivement-details .year{
+    margin-top: 27px;
+    font-size:18px;
+    font-weight: 500;
+    color: #2d9300;
+}
+.edu-details:hover .institute-img img,
+.edu-details:hover .achivement-details{
+    box-shadow:5px 0 15px rgba(40, 40, 41, 1);
+    transition: 0.01s;
+}
+
+/* my education end */
+/* contact start */
+.contact-section {
+    padding: 30px 150px;
+    width: 100%;
+    background: rgb(229, 236, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form{
+    display: flex;
+    background: #fff;
+    margin: 10px 0;
+    padding: 35px 40px;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: end;
+}
+.contact-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form .col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-img img{
+    width: 450px;
+}
+.input-grp{
+    margin-bottom: 15px;
+    position: relative;
+}
+.form{
+    padding-right: 20px;
+}
+input, textarea{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 5px 10px 45px;
+    outline: none;
+    border: 1px solid #3d3d3d;
+    color: #000;
+    background: #e5ecfb;
+    border-radius: 7px;
+    font-size: 16px;
+
+}
+input::placeholder, textarea::placeholder{
+    font-size: 16px;
+    color: #000;
+}
+.input-grp label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 11px 10px;
+    color: #383737;
+    cursor: text;
+    font-size: 1em;
+    font-weight: 500;
+}
+.input-grp label .fa-solid{
+    font-size: 18px;
+    padding: 0 7px;
+    transition: 0.1s;
+}
+.submit-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+}
+.submit-btn .btn{
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    background: #2506AD;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    box-shadow:0 0 10px rgba(24, 64, 222, 0.5);
+}
+.submit-btn .btn:hover{
+    background: #3d29f0;
+    
+}
+input:focus~label i,
+textarea:focus~label i{
+    color: #7303a7;
+    font-size: 25px;
+    font-weight: bold;
+}
+input:focus,
+textarea:focus{
+    border: 2px solid #7303a7;
+}
+/* contact end */
+/* footer section start */
+
+/* footer section end */
+/* responsice */
+@media only screen and (max-width: 1400px) {
+    #hero-content #name {
+        font-size: 2.4em;
+    }
+    
+    #hero-content h2 {
+        margin-bottom: -5px;
+    }
+    #social-icon {
+        width: 56%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    #social-icon {
+        width: 64%;
+    }
+  }
