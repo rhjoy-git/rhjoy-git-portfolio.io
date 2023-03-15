@@ -17,6 +17,9 @@
     color: #404145;
     font-weight: 600;
 }
+#logo i{
+    color: #61dbfb;
+}
 #header{
     display: flex;
     justify-content: space-between;
@@ -130,7 +133,7 @@
     background-color: #000;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 #social-icon li a{
     color: #00D9FF;
@@ -441,7 +444,107 @@ textarea:focus{
 }
 /* contact end */
 /* footer section start */
+footer{
+    padding: 20px 150px;
+    background: #00012b;
+}
+.footer-sec{
+    display: flex;
+}
+.ft-greeting, .qucick-link, .contact-info{
+    width: 40%;
+    padding: 15px 20px;
+    color: #fff;
+}
+.ft-title{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.ft-greeting p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #cccccc;
+    padding-top: 5px;
+}
+.qucick-link .links li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 3px 0;
+    letter-spacing: 0.7px;
+}
+.qucick-link .links li a{
+    text-decoration: none;
+    color: #fff;
 
+}
+.qucick-link .links li:hover,
+.qucick-link .links li:hover a{
+    color: #FF7B00;
+}
+.contact p{
+    font-size: 15px;
+    color: #cccccc;
+    padding: 7px 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.contact p span i{
+    padding: 0 5px;
+    color: #ffa200;
+    font-size: 16px;
+}
+.footer-social-icon{
+    display: flex;
+    padding: 5px 15px;
+}
+.footer-social-icon li{
+    list-style: none;
+    background: #f2f2f2;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.5 ;
+}
+.footer-social-icon li a i{
+    font-size: 17px;
+    color: #000;
+    transition: 0.3s ease;
+}
+.footer-social-icon li:hover{
+    border: 1px solid #fff;
+    background: #00012b;
+}
+.footer-social-icon li:hover a i{
+    color: #FF7B00;
+    font-size: 18px;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 0;
+}
+.copy-right p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.copy-right p i{
+    color: red;
+}
+.copy-right p a{
+    text-decoration: none;
+    color: #FF7B00;
+    font-weight: 600;
+}
 /* footer section end */
 /* responsice */
 @media only screen and (max-width: 1400px) {
