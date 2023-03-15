@@ -259,7 +259,7 @@
     text-align: center;
     width: 160px;
     height: 120px;
-    background: #0e353b;
+    background: #19192d;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,6 +267,11 @@
     border-radius: 15px;
     margin-right: 10px;
     margin-bottom: 25px;
+    box-shadow:0 0 8px rgba(40, 40, 41, 1);
+
+}
+.skill-box-content:hover{
+    box-shadow:0 5px 10px rgb(25, 25, 26);
 }
 .skill-box span{
     font-size: 3.2em;
