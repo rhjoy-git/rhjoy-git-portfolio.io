@@ -527,13 +527,14 @@ footer{
     font-size: 18px;
 }
 .copy-right{
+    border-top: 1px solid #747171;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 0 0;
+    padding: 20px 0 0;
 }
 .copy-right p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
 }
