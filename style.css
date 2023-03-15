@@ -163,15 +163,6 @@
     margin-bottom: 100px;
     position: relative;
 }
-/* .aboutme-sec::after{
-    display: inline-block;
-    content: "";
-    border-top: 0.1rem solid gray;
-    width: 80rem;
-    margin: 0 -2rem;
-    transform: translateY(7rem);
-    position: absolute;
-} */
 /* every section title */
 .title{
     text-align: center;
