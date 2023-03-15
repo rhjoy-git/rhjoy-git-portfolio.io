@@ -267,8 +267,6 @@
     border-radius: 15px;
     margin-right: 10px;
     margin-bottom: 25px;
-    box-shadow:0 0 8px rgba(40, 40, 41, 1);
-
 }
 .skill-box-content:hover{
     box-shadow:0 5px 10px rgb(25, 25, 26);
