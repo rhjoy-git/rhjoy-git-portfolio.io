@@ -52,6 +52,7 @@
 
   #logo i {
       color: #61dbfb;
+      transition: 0.15s ease all;
   }
 
   #logo:hover,
@@ -59,9 +60,7 @@
       color: #FF7B00;
   }
 
-  #logo:hover i {
-      font-size: 20px;
-  }
+ 
 
   #header {
       display: flex;
