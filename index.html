@@ -5,34 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Rakibul Hasan Joy Portfolio. Full-Stack Web Developer and Blockchain Developer" />
+    <meta name="description"
+        content="Welcome to Rakibul Hasan Joy Portfolio. Full-Stack Web Developer and Blockchain Developer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link id='favicon' rel="shortcut icon" href="img/favicon.png" type="img/x-png">
     <title>RH'Joy | portfolio</title>
 </head>
 
 <body>
     <!-- ------------Header section start--------------- -->
-    <header id="header">
+    <nav id="header">
         <a href="#" id="logo"><i class="fa-brands fa-react"></i>RH'Joy</a>
-
         <div>
             <ul id="navbar">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Exprience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Work</a></li>
+                <li><a href="#exprience">Exprience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </header>
+
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Work</a></li>
+            <li><a href="#exprience">Exprience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+    </nav>
     <!-- ------------Header section end--------------- -->
     <!-- ------------Hero section Start--------------- -->
-    <section id="hero-sec">
+    <section id="home" class="home head-section">
         <div id="particles-js"></div>
-
 
         <div id="hero-content" class="left-right">
             <h2 class="greeting">Hi There,</h2>
@@ -41,7 +55,7 @@
             <button id="hero-btn">About Me <span><i class="fa-solid fa-circle-down"></i></span></button>
             <div class="hero-social-icon">
                 <ul id="social-icon">
-                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#home"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-github"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
@@ -55,7 +69,7 @@
     </section>
     <!-- ------------Hero section end--------------- -->
     <!-- ------------About me section start--------------- -->
-    <section class="aboutme-sec">
+    <section class="about head-section" id="about">
         <h2 class="aboutme-title title"><i class="fa-solid fa-user-large"></i> About <span>Me</span></h2>
         <div class="aboutme">
             <div class="aboutme-img left-right">
@@ -92,7 +106,7 @@
     </section>
     <!-- ------------About me section end--------------- -->
     <!-- ------------Skills & abilities section Start--------------- -->
-    <div class="skillAndAbilites-section">
+    <div class="skills head-section" id="skills">
         <h2 class="skills-title title"><i class="fa-solid fa-laptop-code"></i> Skills & <span>Abilites</span></h2>
 
         <div class="skill-box">
@@ -174,7 +188,7 @@
     </div>
     <!-- ------------Skills & abilities section end--------------- -->
     <!-- ------------My Education section start--------------- -->
-    <section class="education-section">
+    <section class="education head-section" id="education">
         <h2 class="edu-title title"><i class="fa-solid fa-user-graduate"></i> My <span>Education</span></h2>
         <p class="quote">Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.</p>
         <div class="institute-achivement">
@@ -216,7 +230,7 @@
     </section>
     <!-- ------------My Education section end--------------- -->
     <!-- ------------ work project section starts ----------- -->
-    <section class="project-sec">
+    <section class="project head-section" id="project">
         <h2 class="project-title title"><i class="fa-solid fa-user-graduate"></i> Projects <span>Made</span></h2>
 
         <div class="box-container">
@@ -325,7 +339,7 @@
     <!-- ---------------- work project section ends ---------------- -->
 
     <!-- ---------------- Exprience section start ---------------- -->
-    <div class="exprience-section">
+    <section class="exprience head-section" id="exprience">
         <h2 class="exprience-title title"><i class="fas fa-briefcase"></i> Exprience</h2>
         <div class="timeline">
             <div class="center-line">
@@ -403,11 +417,11 @@
                 </section>
             </div>
         </div>
-    </div>
+    </section>
     <!-- ---------------- Exprience section ends ---------------- -->
 
     <!-- ------------Contact section Start--------------- -->
-    <section class="contact-section">
+    <section class="contact head-section" id="contact">
         <h2 class="contact-title title"><i class="fa-solid fa-headset"></i> Get In <span>Touch</span></h2>
 
         <div class="contact-form">
@@ -450,17 +464,17 @@
             <div class="qucick-link">
                 <h3 class="ql-title ft-title">Quick Link</h3>
                 <ul class="links">
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">Home</a></li>
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">About</a></li>
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">Skills</a></li>
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">Education</a></li>
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">Work</a></li>
-                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#">Exprience</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#home">Home</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#about">About</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#skills">Skills</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#education">Education</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#project">Work</a></li>
+                    <li> <span><i class="fa-solid fa-circle-chevron-right"></i></span> <a href="#exprience">Exprience</a></li>
                 </ul>
             </div>
             <div class="contact-info">
                 <h3 class="ci-title ft-title">Contact Info</h3>
-                <div class="contact">
+                <div class="ft-contact">
                     <p><span><i class="fa-solid fa-phone-flip"></i></span> +880 1714-532308</p>
                     <p><span><i class="fa-solid fa-envelope"></i></span> rakibulhasanjoy009@gmail.com</p>
                     <p><span><i class="fa-solid fa-map-location-dot"></i></span> East Kazipara, Dhaka, Bangladesh - 1216
@@ -480,8 +494,31 @@
         </div>
     </footer>
     <!-- ------------Footer section End--------------- -->
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" class="fa-solid fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+
+
+
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- particle.js links -->
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- typed.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+
     <script src="js/style.js"></script>
 </body>
 
