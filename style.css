@@ -33,7 +33,7 @@
   .education,
   .project,
   .exprience,
-  .contact{
+  .contact {
       width: 100%;
       padding: 30px 150px;
   }
@@ -52,6 +52,15 @@
 
   #logo i {
       color: #61dbfb;
+  }
+
+  #logo:hover,
+  #logo:hover i {
+      color: #FF7B00;
+  }
+
+  #logo:hover i {
+      font-size: 20px;
   }
 
   #header {
@@ -84,10 +93,6 @@
       font-size: 1em;
       color: #404145;
       font-weight: 600;
-  }
-
-  #logo:hover {
-      color: #FF7B00;
   }
 
   #navbar li a.active,
@@ -570,7 +575,7 @@
 
   /* my education end */
   /* project sec start  */
-  .project{
+  .project {
       background: linear-gradient(to bottom, #000031, #00002c);
       min-height: 100vh;
       margin: 0 auto;
@@ -848,7 +853,7 @@
   /* exprience sec end */
 
   /* contact start */
-  .contact{
+  .contact {
       background: rgb(229, 236, 251);
       display: flex;
       flex-direction: column;
@@ -1108,9 +1113,11 @@
       transition: 1s linear;
       z-index: 1000;
   }
+
   #scroll-top.active {
-    top: calc(100% - 12%);
+      top: calc(100% - 12%);
   }
+
   /* Scroll icon end */
   /* responsice */
   @media only screen and (max-width: 1400px) {

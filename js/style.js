@@ -16,7 +16,7 @@ window.onscroll = () => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 65;
         let height = sec.offsetHeight
-        let id = sec.getAttribute("id");
+        let id = sec.getAttribute('id');
 
         if (top >= offset && top <= offset + height) {
             links.forEach(link => {
@@ -31,7 +31,7 @@ window.onscroll = () => {
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
+        scrollTop: $($(this).attr('href')).offset().top - 65,
     }, 100, 'linear')
 });
 //  <!-- dropdpwnMenu on screen 1024px -->
