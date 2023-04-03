@@ -1,6 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-  /* font-family: 'Poppins', sans-serif; */
   * {
       margin: 0;
       padding: 0;
@@ -12,6 +11,16 @@
       scroll-behavior: smooth;
   }
 
+  body {
+      background: #f7f7f7;
+  }
+
+  ::selection {
+      color: #fff;
+      background: #ff7979;
+  }
+
+  /* scroll bar start*/
   html::-webkit-scrollbar {
       width: 0.8rem;
   }
@@ -24,10 +33,7 @@
       background: #420177;
   }
 
-  body {
-      background: #f7f7f7;
-  }
-
+  /* scroll bar end*/
   .about,
   .skills,
   .education,
@@ -42,7 +48,7 @@
       width: 50%;
   }
 
-  /* header start */
+  /* header section start */
   #logo {
       text-decoration: none;
       font-size: 1.2em;
@@ -59,8 +65,6 @@
   #logo:hover i {
       color: #FF7B00;
   }
-
- 
 
   #header {
       display: flex;
@@ -130,7 +134,6 @@
       top: 60px;
       width: 300px;
       height: 0px;
-      /* background: #009b3441; */
       backdrop-filter: blur(30px);
       border-radius: 10px;
       overflow: hidden;
@@ -176,6 +179,23 @@
       margin: 5px auto;
   }
 
+  /* dropdown menu end */
+
+  /* <!-- ============ header responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      #header {
+          padding: 18px 150px;
+      }
+
+      #logo {
+          font-size: 1.2em;
+      }
+
+      #navbar li a {
+          font-size: 1em;
+      }
+  }
+
   @media only screen and (max-width: 1024px) {
 
       /* navbar sec start */
@@ -194,9 +214,9 @@
       /* navbar sec end */
   }
 
-  /* dropdown menu end */
-
+  /* <!-- ============ header responsive start ============ --> */
   /* header end */
+
   /* hero section start */
   .home {
       display: flex;
@@ -258,7 +278,6 @@
   }
 
   #hero-content .myknowledge span {
-      font-size: 2rem;
       color: rgb(148, 8, 8);
       font-weight: 600;
       padding: 1rem 0;
@@ -297,9 +316,8 @@
 
   #social-icon {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
-      width: 45%;
   }
 
   #social-icon li {
@@ -308,6 +326,7 @@
       height: 43px;
       width: 43px;
       background-color: #000;
+      margin-right: 12px;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
@@ -339,6 +358,19 @@
       box-shadow: 0 0 20px rgba(24, 64, 222, 0.5);
 
   }
+
+  /* <!-- ============ Home responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      #hero-content #name {
+          font-size: 2.4em;
+      }
+
+      #hero-content .myknowledge {
+          font-size: 1.5em;
+      }
+  }
+
+  /* <!-- ============ Home responsive end ============ --> */
 
   /* hero section end */
   /* About me section Start */
@@ -436,6 +468,23 @@
       width: 250px;
   }
 
+  /* <!-- ============ About responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      .aboutme-content .pro {
+          font-size: 1em;
+      }
+
+      .personal-info {
+          display: block;
+      }
+
+      .personal-info div:nth-child(1) {
+          margin-bottom: 20px;
+      }
+  }
+
+  /* <!-- ============ About responsive end ============ --> */
+
   /* About me section end */
   /* Skills & abilities start */
   .skills {
@@ -460,8 +509,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 15px;
-      margin-right: 10px;
-      margin-bottom: 25px;
+      margin: 0 5px 25px 5px;
   }
 
   .skill-box-content:hover {
@@ -478,6 +526,28 @@
       font-weight: 600;
   }
 
+  /* <!-- ============ Skills responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      .skill-box {
+          padding: 0;
+      }
+
+      .skill-box-content {
+          width: 140px;
+          height: 110px;
+      }
+
+      .skill-box-content img {
+          width: 55px;
+      }
+
+      .skill-box-content p {
+          font-size: 1em;
+      }
+  }
+
+  /* <!-- ============ Skills responsive end ============ --> */
+
   /* Skills & abilities end */
   /* my education start */
   .education {
@@ -487,7 +557,7 @@
   .education .quote {
       text-align: center;
       padding: 8px 0;
-      font-size: 0.9em;
+      font-size: 1.02em;
       font-weight: 600;
       letter-spacing: 0.6px;
       word-spacing: 1.2px;
@@ -571,6 +641,23 @@
       font-family: "Nunito", sans-serif;
       font-weight: 700;
   }
+
+  /* <!-- ============ Education responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      .edu-details {
+          width: 90%;
+      }
+
+      .achivement-details .degree {
+          font-size: 1.5rem;
+      }
+
+      .achivement-details .year {
+          font-size: 1.2rem;
+      }
+  }
+
+  /* <!-- ============ Education responsive end ============ --> */
 
   /* my education end */
   /* project sec start  */
@@ -714,13 +801,39 @@
       transform: translateX(5px);
   }
 
-  /* project section ends */
-  /* exprience sec start  */
-  ::selection {
-      color: #fff;
-      background: #ff7979;
+  /* <!-- ============ Project responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+
+      .project .box-container {
+          gap: 1rem !important;
+      }
+
+      .project .box-container .box {
+          width: 32% !important;
+          height: 15rem !important;
+      }
+
+      .project .box-container .box .content .tag {
+          padding-left: 0;
+      }
+
+      .project .box-container .box .content .tag h3 {
+          font-size: 1.05rem;
+      }
+
+      .project .desc p {
+          font-size: 1rem;
+      }
+
+      .project .desc .btns .btn {
+          padding: 1rem !important;
+      }
   }
 
+  /* <!-- ============ Project responsive end ============ --> */
+  /* project section ends */
+
+  /* exprience sec start  */
   .timeline {
       max-width: 1200px;
       margin: 20px auto;
@@ -849,6 +962,32 @@
       transform: scale(0.97);
   }
 
+  /* <!-- ============ Eexprience responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      .row section .details .title {
+          font-size: 1.019em;
+      }
+
+      .row section .details:nth-child(2) {
+          font-size: 0.9em;
+      }
+
+      .row section p {
+          font-size: 0.9em;
+      }
+
+      .row section .bottom a {
+          font-size: 0.895em;
+      }
+
+      .row section .bottom i {
+          font-size: 0.9em;
+          font-weight: 600;
+
+      }
+  }
+
+  /* <!-- ============ Eexprience responsive end ============ --> */
   /* exprience sec end */
 
   /* contact start */
@@ -971,7 +1110,22 @@
       border: 2px solid #7303a7;
   }
 
+  /* <!-- ============ Eexprience responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+      .form {
+          padding-right: 35px;
+      }
+
+      .contact-form {
+          width: 100%;
+          padding: 24px;
+      }
+
+  }
+
+  /* <!-- ============ Eexprience responsive start ============ --> */
   /* contact end */
+
   /* footer section start */
   footer {
       padding: 20px 150px;
@@ -1054,7 +1208,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      transition: 0.5;
+      transition: 0.3s;
   }
 
   .footer-social-icon li a i {
@@ -1070,7 +1224,7 @@
 
   .footer-social-icon li:hover a i {
       color: #FF7B00;
-      font-size: 18px;
+      font-size: 20px;
   }
 
   .copy-right {
@@ -1097,6 +1251,38 @@
       font-weight: 600;
   }
 
+  /* <!-- ============ Footer responsive start ============ --> */
+  @media only screen and (max-width: 1400px) {
+
+      .ft-greeting,
+      .qucick-link,
+      .contact-info {
+          padding: 15px 8px;
+      }
+
+      .ft-greeting p {
+          font-size: 0.85em;
+      }
+
+      .ft-title {
+          font-size: 1.2em;
+      }
+
+      .qucick-link .links li {
+          font-size: 0.85em;
+      }
+
+      .ft-contact p {
+          font-size: 0.79em;
+          letter-spacing: 0px;
+      }
+
+      .copy-right p {
+          font-size: 0.9em;
+      }
+  }
+
+  /* <!-- ============ Footer responsive end ============ --> */
   /* footer section end */
   /* Scroll icon start  */
   #scroll-top {
@@ -1118,23 +1304,3 @@
   }
 
   /* Scroll icon end */
-  /* responsice */
-  @media only screen and (max-width: 1400px) {
-      #hero-content #name {
-          font-size: 2.4em;
-      }
-
-      #hero-content h2 {
-          margin-bottom: -5px;
-      }
-
-      #social-icon {
-          width: 56%;
-      }
-  }
-
-  @media only screen and (max-width: 1200px) {
-      #social-icon {
-          width: 64%;
-      }
-  }
