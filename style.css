@@ -297,7 +297,7 @@
       color: #FF7B00;
   }
 
-  #hero-content .myknowledge{
+  #hero-content .myknowledge {
       font-size: 1.7em;
       color: #000;
       margin-bottom: 10px;
@@ -575,11 +575,15 @@
       background: #2506AD;
       border: none;
       border-radius: 7px;
-      color: #fff;
       letter-spacing: 0.5px;
       margin-top: 40px;
       box-shadow: 0 0 20px rgba(24, 64, 222, 0.5);
       transition: 0.3s;
+  }
+
+  .resume-btn a {
+      text-decoration: none;
+      color: #fff;
   }
 
   .resume-btn:hover {
