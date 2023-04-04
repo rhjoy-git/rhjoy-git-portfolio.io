@@ -44,6 +44,18 @@
       padding: 30px 150px;
   }
 
+  @media only screen and (max-width: 975px) {
+
+      .about,
+      .skills,
+      .education,
+      .project,
+      .exprience,
+      .contact {
+          padding: 30px;
+      }
+  }
+
   .left-right {
       width: 50%;
   }
@@ -78,6 +90,21 @@
       left: 0;
       z-index: 1000;
   }
+
+  /* <!-- ============ Navbar responsive start ============ --> */
+  @media only screen and (max-width: 975px) {
+      #header {
+          padding: 18px 80px !important;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      #header {
+          padding: 18px 35px !important;
+      }
+  }
+
+  /* <!-- ============ Navbar responsive end ============ --> */
 
   #navbar {
       display: flex;
@@ -214,11 +241,12 @@
       /* navbar sec end */
   }
 
-  /* <!-- ============ header responsive start ============ --> */
+  /* <!-- ============ header responsive end ============ --> */
   /* header end */
 
   /* hero section start */
   .home {
+      position: relative;
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -269,7 +297,7 @@
       color: #FF7B00;
   }
 
-  #hero-content .myknowledge {
+  #hero-content .myknowledge{
       font-size: 1.7em;
       color: #000;
       margin-bottom: 10px;
@@ -367,6 +395,107 @@
 
       #hero-content .myknowledge {
           font-size: 1.5em;
+      }
+  }
+
+  @media only screen and (max-width: 1200px) {
+      .home {
+          gap: 1.5rem;
+      }
+
+      #hero-img {
+          flex: 1 1 40rem;
+          padding-left: 0;
+          margin: auto auto;
+      }
+
+      #hero-img img {
+          width: 75%;
+          margin-left: 3rem;
+      }
+
+      #hero-content {
+          flex: 1 1 40rem;
+      }
+
+      #hero-content .myknowledge {
+          font-size: 1.2em;
+      }
+
+      #hero-content #name {
+          font-size: 1.8em;
+      }
+
+      #hero-content .greeting {
+          font-size: 2.6em;
+      }
+
+      #hero-content #hero-btn {
+          margin-top: 25px;
+          font-size: 1em;
+      }
+
+      .hero-social-icon {
+          margin-top: 10px;
+      }
+  }
+
+  @media only screen and (max-width: 975px) {
+      .home {
+          margin: 0;
+          padding: 70px 80px;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .home {
+          flex-direction: column;
+          padding: 40px;
+      }
+
+      .left-right {
+          width: 100%;
+      }
+
+      #hero-content {
+          flex: auto;
+          margin-top: 0;
+          width: 100%;
+      }
+
+      #hero-content .greeting {
+          font-size: 3.2em;
+      }
+
+      #hero-content #name {
+          font-size: 2.3em;
+      }
+
+      #hero-content .myknowledge {
+          font-size: 1.5em;
+      }
+
+      #hero-img {
+          text-align: center;
+          flex: auto;
+      }
+
+      #hero-img img {
+          width: 70%;
+          margin-left: 0rem;
+      }
+  }
+
+  @media only screen and (max-width: 360px) {
+      #hero-content #hero-btn {
+          margin-top: 25px;
+          padding: 10px 15px;
+          font-size: 0.9em;
+          font-weight: 500;
+      }
+
+      #social-icon li {
+          margin-right: 5px;
       }
   }
 
@@ -483,6 +612,42 @@
       }
   }
 
+  @media only screen and (max-width: 768px) {
+      .about {
+          margin-top: 10px;
+      }
+
+      .aboutme {
+          flex-direction: column;
+          padding: 30px 0;
+      }
+
+      .aboutme-img {
+          text-align: center;
+      }
+
+      .resume-btn {
+          padding: 10px 20px;
+          font-size: 1em;
+          margin-top: 20px;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      .aboutme {
+          padding: 10px 0 30px 0;
+      }
+
+      .personal-info {
+          width: 100%;
+      }
+
+      .resume-btn {
+          padding: 10px 20px;
+          font-size: 0.9em;
+      }
+  }
+
   /* <!-- ============ About responsive end ============ --> */
 
   /* About me section end */
@@ -544,6 +709,14 @@
       .skill-box-content p {
           font-size: 1em;
       }
+  }
+
+  @media only screen and (max-width: 360px) {
+      .skill-box-content {
+          width: 120px;
+          margin: 0 5px 7px 5px;
+      }
+
   }
 
   /* <!-- ============ Skills responsive end ============ --> */
@@ -655,6 +828,72 @@
       .achivement-details .year {
           font-size: 1.2rem;
       }
+  }
+
+  @media only screen and (max-width: 1200px) {
+      .education .quote {
+          letter-spacing: 0;
+      }
+
+      .achivement-details .degree {
+          font-size: 1.2rem;
+      }
+
+      .achivement-details .year {
+          font-size: 1.1rem;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .education .quote {
+          font-size: 1em;
+          word-spacing: 0;
+      }
+
+      .edu-details {
+          width: 95%;
+      }
+
+  }
+
+  @media only screen and (max-width: 570px) {
+      .edu-details {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .edu-details .institute-img,
+      .edu-details .achivement-details {
+          flex: 0;
+      }
+
+      .edu-details .institute-img img {
+          height: 30vh;
+      }
+
+      .achivement-details .degree {
+          padding: 0;
+          font-size: 1.15em;
+      }
+
+      .achivement-details .inst-name {
+          margin: 0;
+      }
+
+      .achivement-details .inst-name {
+          font-size: 0.95em;
+      }
+
+      .achivement-details .year {
+          font-size: 1rem;
+          margin: 0.9rem;
+      }
+
+      .project .box-container .box {
+          width: 100% !important;
+      }
+
   }
 
   /* <!-- ============ Education responsive end ============ --> */
@@ -830,6 +1069,33 @@
       }
   }
 
+  @media only screen and (max-width: 1200px) {
+      .project .box-container .box {
+          width: 45% !important;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .project .desc .btns .btn {
+          font-size: 0.9rem;
+          margin-right: 0;
+      }
+
+      .project .box-container .box .content .tag {
+          padding-left: 14px;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      .project .box-container {
+          flex-direction: column;
+      }
+
+      .project .box-container .box {
+          width: 100% !important;
+      }
+  }
+
   /* <!-- ============ Project responsive end ============ --> */
   /* project section ends */
 
@@ -987,6 +1253,87 @@
       }
   }
 
+  @media only screen and (max-width: 1200px) {
+      .timeline {
+          padding: 0;
+      }
+
+      .timeline .row section {
+          padding: 10px;
+          margin: 0;
+      }
+
+  }
+
+  @media only screen and (max-width: 975px) {
+      .row section .details:nth-child(2) {
+          font-size: 0.88em;
+      }
+
+
+  }
+
+  @media only screen and (max-width: 768px) {
+      .timeline .center-line {
+          left: 40px;
+      }
+
+      .timeline .row {
+          margin: 30px 0 3px 60px;
+      }
+
+      .timeline .row section {
+          width: 100%;
+          margin-left: 20px;
+      }
+
+      .row-1 section::before {
+          left: -7px;
+      }
+
+      .row-1 section .icon {
+          left: -60px;
+      }
+
+      .row-2 section .icon {
+          left: -60px;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      .timeline .center-line {
+          /* left: 40px; */
+          display: none;
+      }
+
+      .row-1 section .icon,
+      .row-2 section .icon {
+          display: none;
+      }
+
+      .timeline .row {
+          margin: 10px 0;
+      }
+
+      .timeline .row section::before {
+          display: none;
+      }
+
+      .timeline .row section {
+          width: 100%;
+          margin-left: 0;
+      }
+
+      .row section .details,
+      .row section .bottom {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          text-align: left;
+          justify-content: flex-start;
+      }
+  }
+
   /* <!-- ============ Eexprience responsive end ============ --> */
   /* exprience sec end */
 
@@ -1039,7 +1386,6 @@
   input,
   textarea {
       width: 100%;
-      max-width: 600px;
       padding: 10px 5px 10px 45px;
       outline: none;
       border: 1px solid #3d3d3d;
@@ -1110,7 +1456,7 @@
       border: 2px solid #7303a7;
   }
 
-  /* <!-- ============ Eexprience responsive start ============ --> */
+  /* <!-- ============ Contact responsive start ============ --> */
   @media only screen and (max-width: 1400px) {
       .form {
           padding-right: 35px;
@@ -1123,7 +1469,56 @@
 
   }
 
-  /* <!-- ============ Eexprience responsive start ============ --> */
+  @media only screen and (max-width: 1200px) {
+      .contact-form {
+          padding: 10px;
+      }
+
+      .contact-img img {
+          width: 350px;
+      }
+
+      .form {
+          padding-right: 15px;
+      }
+
+      .input-grp {
+          margin-bottom: 10px;
+      }
+
+      .submit-btn .btn {
+          padding: 10px 18px;
+          font-size: 0.9em;
+      }
+
+      .submit-btn .btn i {
+          font-size: 0.89em;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .contact-form {
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .contact-form .col {
+          width: 100%;
+      }
+
+      .form {
+          padding-right: 0;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      .contact-img img {
+          width: 100%;
+      }
+
+  }
+
+  /* <!-- ============ Cotact responsive start ============ --> */
   /* contact end */
 
   /* footer section start */
@@ -1282,6 +1677,47 @@
       }
   }
 
+  @media only screen and (max-width: 975px) {
+      footer {
+          padding: 20px;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .footer-sec {
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .ft-greeting {
+          width: 100%;
+      }
+
+      .qucick-link {
+          width: 40%;
+      }
+
+      .contact-info {
+          width: 60%;
+      }
+  }
+
+  @media only screen and (max-width: 570px) {
+      .qucick-link {
+          width: 100%;
+      }
+
+      .contact-info {
+          width: 100%;
+      }
+  }
+
+  @media only screen and (max-width: 360px) {
+      .footer-social-icon {
+          padding: 0;
+      }
+  }
+
   /* <!-- ============ Footer responsive end ============ --> */
   /* footer section end */
   /* Scroll icon start  */
@@ -1302,5 +1738,20 @@
   #scroll-top.active {
       top: calc(100% - 12%);
   }
+
+  /* <!-- ============ Scroll icon responsive start ============ --> */
+  @media only screen and (max-width: 975px) {
+      #scroll-top.active {
+          top: calc(100% - 8%);
+      }
+
+      #scroll-top {
+          right: 1rem;
+          padding: 9px 10px;
+          font-size: 1rem;
+      }
+  }
+
+  /* <!-- ============ Scroll icon responsive end ============ --> */
 
   /* Scroll icon end */
