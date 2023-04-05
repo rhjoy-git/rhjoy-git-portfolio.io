@@ -327,7 +327,10 @@
       transition: 0.2s;
       position: relative;
   }
-
+  #hero-content #hero-btn a{
+    color: #fff;
+    text-decoration: none;
+  }
   #hero-content #hero-btn:hover {
       transform: scale(0.97);
       cursor: pointer;
