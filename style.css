@@ -45,7 +45,6 @@
   }
 
   @media only screen and (max-width: 975px) {
-
       .about,
       .skills,
       .education,
@@ -369,11 +368,13 @@
       font-size: 1.3em;
   }
 
+  #social-icon li.active,
   #social-icon li:hover {
       background: #0685DA;
   }
 
-  #social-icon li:hover a {
+  #social-icon li.active a,
+    #social-icon li:hover a {
       color: #fff;
   }
 
@@ -954,6 +955,7 @@
       background: rgba(255, 255, 255, 0.9);
       display: flex;
       flex-direction: column;
+      transition: 0.85s ease;
   }
 
   .project .box-container .box .content .tag {

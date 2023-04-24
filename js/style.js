@@ -1,3 +1,15 @@
+// visiblity screen change title will change <!--  -->
+document.addEventListener('visibilitychange',
+    function () {
+        if (document.visibilityState === "visible") {
+            document.title = "RH'Joy | portfolio";
+            $("#favicon").attr("href", "img/favicon.png");
+        } else {
+            document.title = "Come Back To Portfolio";
+            $("#favicon").attr("href", "img/favhand.png");
+        }
+    });
+// <!-- visibility screen work end -->
 //  <!-- on scroll top -->
 document.addEventListener("scroll", () => {
     if (window.scrollY > 60) {
@@ -21,7 +33,7 @@ window.onscroll = () => {
         if (top >= offset && top <= offset + height) {
             links.forEach(link => {
                 link.classList.remove('active');
-                document.querySelector('#navbar li a[href*='+id+']').classList.add('active');
+                document.querySelector('#navbar li a[href*=' + id + ']').classList.add('active');
             });
         };
     });
@@ -31,7 +43,7 @@ window.onscroll = () => {
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top - 65,
+        scrollTop: $($(this).attr('href')).offset().top - 64,
     }, 100, 'linear')
 });
 //  <!-- dropdpwnMenu on screen 1024px -->
@@ -45,21 +57,21 @@ toggleBtn.addEventListener("click", () => {
     toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"
 })
 //  <!-- dropdpwnMenu end -->
-// visiblity screen change title will change <!--  -->
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "RH'Joy | portfolio";
-            $("#favicon").attr("href", "img/favicon.png");
-        } else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "img/favhand.png");
+// Social icon activision start
+let socialIcons = document.querySelectorAll("#social-icon li");
+socialIcons.forEach(socialIcon => {
+    socialIcon.addEventListener("click", function () {
+        for (let sibling of socialIcon.parentNode.children) {
+            sibling.classList.remove('active');
         }
-    });
-// <!-- visibility screen work end -->
+        socialIcon.classList.add('active');
+    })
+});
+// Social icon activision end
+
 // <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-    strings: ["Frontend Development", "Backend Development", "Web Design", "Blockchain Development", "Web Development"],
+let typed = new Typed(".typing-text", {
+    strings: ["Frontend Development", "Web Design", "Web Development"],
     loop: true,
     typeSpeed: 80,
     backSpeed: 50,
